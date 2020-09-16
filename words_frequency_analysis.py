@@ -13,6 +13,10 @@ def main():
     db_name = 'restaurants.db'
     # generate_data_for_histograms(db_name)
 
+    word_frequency_analysis(db_name)
+
+
+def word_frequency_analysis(db_name):
     nltk.download('punkt')
     nltk.download('wordnet')
     nltk.download('averaged_perceptron_tagger')
